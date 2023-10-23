@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='utama.css'>
+    <title>Websiteku</title>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="Assets/Logo.png">
+        <h1>
+            Websiteku
+        </h1>
+    </header>
+    
+    <section class="body">
+        <nav class="side">
+            <ul class="menu">
+              <li class="sidebar"><a href="index.html">Halaman Utama</a></li>
+              <li class="sidebar"><a href="halamanFormulir.html">Halaman Formulir</a></li>
+              <li class="sidebar"><a href="halamanTabel.html">Halaman Tabel</a></li>
+            </ul>
+        </nav>
+
+        <div class="body">
+            <h1 class="welcomeMsg">
+                Hi <span id="nama"></span>, Selamat Datang Di Website
+            </h1>
+
+            <script>
+                var name = prompt("Masukan Nama Kamu");
+                document.getElementById("nama").innerText = name;
+              </script>
+
+            <h1>Tentang Saya</h1>
+            <p>Perkenalkan nama saya Dhilan Septa Yudha, saya adalah mahasiswa ITERA program studi Teknik Informatika dengan NIM 120140224.</p>
+            <p>
+                Website ini dibuat untuk memenuhi assignment UTS mata kuliah Pemrograman Web. Website ini dibuat menggunakan HTML dan CSS, layouting website menggunakan flexbox.
+                Pada UTS ini, saya diminta untuk membuat 3 pages yaitu Halaman utama, Halaman Formulir, dan Halaman Tabel. Untuk ketentuan masing masing halaman, saya akan jabarkan masing-masing dibawah ini.
+            </p>
+
+            <h2>Halaman Utama</h2>
+            <ol>
+                <li>Judul halaman yang sesuai</li>
+                <li>Menu navigasi untuk berpindah ke halaman lain (Form dan Tabel)</li>
+                <li>Deskripsi singkat tentang website</li>
+            </ol>
+
+            <h2>Halaman Formulir</h2>
+            <ol>
+                <li>Buatlah form pendaftaran dengan field: Nama, NIM, Program Studi, Email, Password, Jenis Kelamin, Tanggal Lahir, dan Alamat.</li>
+                <li>Setiap field harus memiliki label yang jelas.</li>
+                <li>Gunakan atribut required untuk field yang wajib diisi.</li>
+                <li>Tambahkan tombol submit di bagian bawah form.</li>
+                <li>Menggunakan method get dan mendesain query string yang akan dikirim</li>
+            </ol>
+
+            <h2>Halaman Tabel</h2>
+            <ol>
+                <li>Buatlah tabel yang menampilkan daftar mahasiswa dengan kolom: Nama, NIM, Program Studi, Email, Password, Jenis Kelamin, Tanggal Lahir, dan Alamat</li>
+                <li>Tabel harus memiliki header dan setidaknya 5 baris data (menggunakan data dummy)</li>
+                <li>Gunakan styling CSS untuk memberikan warna latar belakang yang berbeda pada baris genap (even) dan ganjil (odd)</li>
+            </ol>
+        </div>
+
+    </section>
+
+    <footer>
+        © 2023 Websiteku - Dhilan Septa Yudha
+    </footer>
+</body>
+</html>
